@@ -4,3 +4,11 @@
 *.ptx
 *.cubin
 *.fatbin
+
+**/Debug/
+**/Release/
+build/
+**/\.settings/
+**/.cproject
+**/.project
+
