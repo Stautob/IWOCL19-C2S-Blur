@@ -1,6 +1,3 @@
-#include <cmath>
-#include <iostream>
-#include <string>
 
 __global__ void blur(unsigned char* input_image, unsigned char* output_image, int const width, int const height) {
 
@@ -55,6 +52,4 @@ void filter(unsigned char* input_image, unsigned char* output_image, unsigned in
 
 	cudaFree(dev_input);
 	cudaFree(dev_output);
-
-	std::cout << "Log: finished filtering" << std::endl;
 }
